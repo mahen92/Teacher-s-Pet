@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_actionsscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mahendran.teacherspet.ActionsScreen"
+    tools:showIn="@layout/activity_actionsscreen">
+
+    <ImageButton
+        android:id = "@+id/examandassignments"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:onClick = "@string/login"
+        android:text = "@string/login"
+        android:visibility="invisible"
+        android:background="@drawable/examsandassignments"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/studentdb"
+        android:layout_alignStart="@+id/studentdb"
+        android:contentDescription="@string/choose_exams"
+        android:layout_marginTop="29dp" />
+
+    <ImageButton
+
+        android:id = "@+id/studentdb"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:onClick = "@string/login"
+        android:text = "@string/login"
+        android:contentDescription="@string/choose_db"
+        android:visibility="invisible"
+        android:background="@drawable/dtudentdb"
+        android:layout_below="@+id/examandassignments"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <ImageButton
+        android:id = "@+id/profiles"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:onClick = "@string/login"
+        android:text = "@string/login"
+        android:visibility="invisible"
+        android:background="@drawable/profiles"
+        android:contentDescription="@string/choose_profile"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/discussionroom"
+        android:layout_alignStart="@+id/discussionroom" />
+
+    <ImageButton
+        android:id = "@+id/discussionroom"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:onClick = "@string/login"
+        android:text = "@string/login"
+        android:contentDescription="@string/choose_discussion"
+        android:background="@drawable/discussionroom"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/studentdb"
+        android:layout_alignLeft="@+id/studentdb"
+        android:layout_alignStart="@+id/studentdb" />
+</RelativeLayout>

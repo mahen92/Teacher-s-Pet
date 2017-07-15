@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:paddingBottom="10dp"
+    android:background="#00bfff"
+    android:elevation="1dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:elevation="10dp"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:id="@+id/question"
+            android:contentDescription="@string/Ask_your_question_here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="left"
+            android:padding="1dp" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:elevation="10dp"
+        android:background="#000000"
+        >
+        </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="6dp"
+        android:elevation="10dp">
+        <TextView
+            android:id="@+id/answer"
+            android:contentDescription="@string/answer_by_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="left"
+            android:padding="1dp" />
+    </FrameLayout>
+</LinearLayout>

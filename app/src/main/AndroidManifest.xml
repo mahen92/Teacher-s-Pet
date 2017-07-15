@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mahendran.teacherspet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:name=".Connectivity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActionsScreen"
+            android:label="@string/title_activity_actionsscreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StudentDatabase.StudentDatabase"
+            android:label="@string/title_activity_student_database"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DiscussionRoom.DiscussionRoom"
+            android:label="@string/title_activity_discussionroom"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Test.TestsAndAssignments"
+            android:label="@string/title_activity_testsandassignments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StudentDatabase.AddStudent"
+            android:label="@string/title_activity_add_student"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Test.TestAndAssignmentCreate"
+            android:label="@string/title_activity_testandassignmentcreate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DiscussionRoom.StudentDiscussionBoard"
+            android:label="@string/title_activity_student_discussion_board"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ClassesAndTeachers.ClassAndTeachers"
+            android:label="@string/title_activity_class_and_teachers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Test.AddTest"
+            android:label="@string/title_activity_add_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".Widget.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_info" />
+        </receiver>
+        <receiver
+            android:name=".Connectivity.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".Widget.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+</manifest>
